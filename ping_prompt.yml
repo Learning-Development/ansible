@@ -7,7 +7,7 @@
         prompt: "Enter ssh user"
       - name: password
         prompt: "Enter password for ssh user"
-    
+
     vars:
       ansible_user: "{{ user }}"
       ansible_password: "{{ password }}"

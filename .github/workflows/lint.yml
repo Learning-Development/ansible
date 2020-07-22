@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: check out repository under workspace
+    - name: checkout repo
       uses: actions/checkout@v2
 
     - name: Lint Ansible Playbook
