@@ -1,4 +1,4 @@
-name: Ansible Lint  # feel free to pick your own name
+name: Ansible Lint
 
 on: [push, pull_request]
 
@@ -9,6 +9,7 @@ jobs:
 
     steps:
     # Important: This sets up your GITHUB_WORKSPACE environment variable
+    - name: check out repository under workspace
     - uses: actions/checkout@v2
 
     - name: Lint Ansible Playbook
