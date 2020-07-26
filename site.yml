@@ -1,5 +1,5 @@
-#- name: '[Linux] configure ngnix'
-#  import_playbook: configure_nginx_web_server.yml
+- name: '[Linux] configure ngnix'
+  import_playbook: configure_nginx_web_server.yml
 
 - hosts: windows
   gather_facts: false
