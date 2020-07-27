@@ -9,6 +9,15 @@ on:
     - master
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout repo
+      uses: actions/checkout@v2
+    - name: Lint Ansible Playbook
+      uses: ansible/ansible-lint-action@master
+      with:
+        targets: ""
   deploy:
     runs-on: ubuntu-latest
     steps:
