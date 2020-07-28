@@ -4,9 +4,7 @@ echo $ANSIBLE_VAULT_PASSWORD >> .vault
 
 ansible-galaxy install -r roles/requirements.yml
 
-echo "Hello $1"
-
-if ! ansible-playbook -i "$1" --vault-password-file .vault; then
+if ! ansible-playbook -i hosts_aws_ec2.yml site.yml --vault-password-file .vault; then
   echo "Ansible failed!"
   rm .vault
   exit 1
