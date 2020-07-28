@@ -24,6 +24,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: ./.github/actions/ansible
+      with: 
+        inventory: hosts_azure_rm.yml
       env:
         ANSIBLE_VAULT_PASSWORD: ${{ secrets.ANSIBLE_VAULT_PASSWORD }}
         AZURE_TENANT: ${{ secrets.AZURE_TENANT }}
