@@ -1,4 +1,4 @@
-FROM duffney/ansible:aws
+FROM duffney/ansible:multiCloud
 
 COPY ./entrypoint.sh /entrypoint.sh
 
