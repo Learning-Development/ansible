@@ -15,5 +15,7 @@ RUN yum check-update; \
 RUN pip2.7 install cryptography==2.2.2
 
 RUN  pip install ansible[azure]; \
+   pip install boto; \
+   pip install boto3; \
    pip install "pywinrm>=0.3.0"; \
    pip install ansible-lint

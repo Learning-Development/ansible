@@ -9,6 +9,8 @@ RUN  yum check-update; \
    
 RUN pip install --upgrade pip
 
+RUN pip2.7 install cryptography==2.2.2
+
 RUN pip install ansible; \
    pip install boto; \
    pip install boto3; \

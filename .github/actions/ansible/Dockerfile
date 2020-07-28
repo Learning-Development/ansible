@@ -1,4 +1,4 @@
-FROM duffney/ansible:azure
+FROM duffney/ansible:aws
 
 COPY ./entrypoint.sh /entrypoint.sh
 
